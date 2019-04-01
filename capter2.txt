@@ -1,0 +1,6 @@
+远程仓库的使用
+1.查看远程仓库
+git remote   查看远程仓库的名字
+git remote -v 查看远程仓库的名字及URL
+2.添加远程仓库
+git remote add <remote-name> URL
