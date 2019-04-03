@@ -40,13 +40,21 @@ git rm README.md
 git add README
 
 三、查看提交历史
-1.
+1.git log 查看提交纪录
+2.git log -p 显示每次提交的内容差异   -2显示最近两次提交
+3.git log --stat 列出有多少文件被修改，修改过的文件哪些行被移除或者添加，在每次提交的最后还有一个总结
+4.git log --pretty=oneline/short/full/fuller
+5.git log --pretty=format:"%h - %an,%ar : %s" 具体请看官方文档
+更多git log请查看官方文档
+
+四、撤销操作
+1.git commit -amend 会覆盖前一次提交结果
+2.git reset HEAD <file> 取消暂存的文件
+3.git checkout --<file> 撤销对文件的修改，操作本质是用文件去覆盖他，所以你做得任何修改都将丢失，慎用！
 
 
 
-
-
-远程仓库的使用
+五、远程仓库的使用
 1.查看远程仓库
 git remote   查看远程仓库的名字
 git remote -v 查看远程仓库的名字及URL
