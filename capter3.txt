@@ -48,5 +48,5 @@ git push <remote-name> --delete <branch-name>  删除远程仓库<remote-name>�
 
 
 五、变基
-1.
+结果跟合并（merge）一样，但是提交信息会更加简洁。
 
